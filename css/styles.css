@@ -26,6 +26,7 @@
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
+<<<<<<< HEAD
 }
 body{
     padding: 50px 0px 0px 0px;
@@ -33,4 +34,6 @@ body{
 }
 .navbar-dark{
     background-color:#512DA8; 
+=======
+>>>>>>> d7918f5217af6ee4cfd18a53438b4a839914aeae
 }
