@@ -37,7 +37,7 @@
             <!--navbar-brand class allows to me to display some information as a branding information
                  in my navigation bar-->
             <!--name of a company ,, logo of a company-->
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
@@ -66,10 +66,15 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <!--img-fluid class -> the image will automatically be responsive and adapt to the screen size-->
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a type="submit" class="btn btn-warning btn-block btn-sm" href="#reserveform"
+                        id="reserveBtn">Reserve Table</a>
+                </div>
+
             </div>
         </div>
     </header>
@@ -92,13 +97,15 @@
                         <!--badge -> Box-->
                         <!--badge-danger -> color of the box RED-->
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span>
-                        <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped
-                            with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+                            <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
+                            pizza, topped
+                            with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo
+                            Paneer.
                         </p>
-                    </div>    
-                    
-                </div> 
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -108,11 +115,19 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different
-                    salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly
-                    and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                            different
+                            salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing
+                            bubbly
+                            and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                </div>
             </div>
+
         </div>
 
         <div class="row row-content align-items-center">
@@ -125,10 +140,78 @@
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience
-                            having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering
-                            Indo-Italian fusion experiences. 
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International
+                            experience
+                            having worked closely with whos-who in the culinary world, he specializes in creating
+                            mouthwatering
+                            Indo-Italian fusion experiences.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content justify-content-center align-items-center">
+            <div class="col-12 col-sm-8">
+                <div class="card" id="reserveform">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table
+                    </h3>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="row form-group align-items-center">
+                                <label for="firstname" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-10">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="oneGuest" id="oneGuest"
+                                            value="1">
+                                        <label for="oneGuest" class="form-check-label">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="twoGuest" id="twoGuest"
+                                            value="2">
+                                        <label for="twoGuest" class="form-check-label">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="threeGuest" id="threeGuest"
+                                            value="3">
+                                        <label for="threeGuest" class="form-check-label">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="fourGuest" id="fourGuest"
+                                            value="4">
+                                        <label for="fourGuest" class="form-check-label">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="fiveGuest" id="fiveGuest"
+                                            value="5">
+                                        <label for="fiveGuest" class="form-check-label">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="sixGuest" id="sixGuest"
+                                            value="6">
+                                        <label for="sixGuest" class="form-check-label">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-md-5">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                    <!-- Could also use below, but the placeholder text will not be displayed -->
+                                    <!-- <input type="date" class="form-control" id="date" name="date" placeholder="Date"> -->
+                                </div>
+                                <div class="col-12 col-md-5 mt-3 mt-md-0">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -188,6 +271,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>
