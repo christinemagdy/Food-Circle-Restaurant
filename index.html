@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link href="css/styles.css" rel="stylesheet">
-
+    <link href="css/styles.scss" rel="stylesheet">
+    
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <title>Ristorante Con Fusion</title>
@@ -50,7 +51,7 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginLink">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -103,8 +104,8 @@
         </div>
     </div>
 
-    <div id="formModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+    <div id="formModal" class="modal fade">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table </h4>
@@ -199,8 +200,8 @@
                 </div>
                 <!--tooltip -> hint-->
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a data-toggle="modal" data-target="#formModal" role="button" 
-                    class="btn btn-block nav-link btn-warning" data-toggle="tooltip">Reserve Table</a>
+                    <button id="reserveButton" type="button"
+                    class="btn btn-block btn-warning">Reserve Table</button>
                 </div>
 
             </div>
@@ -342,70 +343,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row row-content justify-content-center align-items-center">
-            <div class="col-12 col-sm-8">
-                <div class="card" id="reserveform">
-                    <h3 class="card-header bg-warning text-white">Reserve a Table
-                    </h3>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="row form-group align-items-center">
-                                <label for="firstname" class="col-md-2 col-form-label">Number of Guests</label>
-                                <div class="col-10">
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="oneGuest" id="oneGuest"
-                                            value="1">
-                                        <label for="oneGuest" class="form-check-label">1</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="twoGuest" id="twoGuest"
-                                            value="2">
-                                        <label for="twoGuest" class="form-check-label">2</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="threeGuest" id="threeGuest"
-                                            value="3">
-                                        <label for="threeGuest" class="form-check-label">3</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="fourGuest" id="fourGuest"
-                                            value="4">
-                                        <label for="fourGuest" class="form-check-label">4</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="fiveGuest" id="fiveGuest"
-                                            value="5">
-                                        <label for="fiveGuest" class="form-check-label">5</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="sixGuest" id="sixGuest"
-                                            value="6">
-                                        <label for="sixGuest" class="form-check-label">6</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row align-items-center">
-                                <label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                                <div class="col-12 col-md-5">
-                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-                                </div>
-                                <div class="col-12 col-md-5 mt-3 mt-md-0">
-                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="offset-md-2 col-md-10">
-                                    <button type="submit" class="btn btn-primary">
-                                        Reserve
-                                    </button>
-                                </div>
-                            </div>
-                        </form> 
-
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 
     <footer class="footer">
@@ -462,20 +399,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--this script to show the button based on The behavior of the carousel-->
-    <script>
-        $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-    </script>
+    <script src="/js/scripts.js"></script>
     <!--this script to control the two button on the Carousel-->
     <!-- <script>
         $(document).ready(function(){
@@ -494,7 +418,8 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script> -->
-
+    <script src="/js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 
 </html>
